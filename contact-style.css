@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.tr .active{
+    color: #ff7999;
+}
+.tr{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.tr a{
+    font-weight: 600;
+    text-decoration: none;
+}
+.tr p{
+    display: none;
+}
+.tlc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 40%;
+    gap: 15px;
+}
+.trc img{
+    width: 100%;
+    flex-basis: 100%;
+    border-radius: 100%;
+}
+.topcontent{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+}
+.tlc button{
+    width: 250px;
+    height: 60px;
+    background-color: #ff7999;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.centercontent{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+}
+.cl, .cr{
+font-size: 25px;
+}
+.cr{
+    color: aqua;
+}
+.midlecontent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.midlecontent h3{
+    font-size: 40px;
+}
+.midlecontent p{
+    font-size: 18px;
+}
+.midlecontent .date{
+    display: flex; justify-content: flex-start; gap: 15px;
+}
+.mainmidlecontent{
+    margin: auto;
+    margin-top: 3%;
+    width: 70%;
+    display: flex;
+    gap: 15px;
+}
+.content{
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 60%;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.incontent{
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+.lowcontent {
+    width: 80%;
+    margin-top: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.icon{
+    margin-top: 60px;
+    text-align: center;
+}
+.icon img{
+    width: 30px;
+    margin: 5px 15px;
+}
+.base{
+    margin-bottom: 30px;
+}
+
+@media (max-width:800px){
+    body{
+        min-width: 500px;
+    }
+    .tr a{
+        display: none;
+    }
+    .content img{
+        width: 100%;
+        height: 100%; 
+        
+    }
+    .lowcontent h1{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .tr p{
+        display: block;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mainmidlecontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .topcontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .tlc{
+        width: 100%;
+        flex-basis: 100%;
+        align-items: center;
+        order: 2;
+    }
+    .trc{
+        order: 1;
+    }
+}
